@@ -1,0 +1,7 @@
+[ 2024-08-07 16:10:02,772 ] 15 root - INFO - giving path of train,test and raw data
+[ 2024-08-07 16:10:02,772 ] 29 root - INFO - we are initiating the data ingestion
+[ 2024-08-07 16:10:02,815 ] 31 root - INFO - data has been read correctly
+[ 2024-08-07 16:10:02,815 ] 37 root - INFO - making the raw file
+[ 2024-08-07 16:10:02,899 ] 40 root - INFO - converting the raw data into train and test
+[ 2024-08-07 16:10:02,903 ] 43 root - INFO - saving train and test data split
+[ 2024-08-07 16:10:02,987 ] 47 root - INFO - ingestion has been completed

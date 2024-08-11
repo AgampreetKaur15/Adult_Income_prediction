@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mlproject
+Version: 0.0.1
+Author: Agampreet
+Author-email: agampreetsingh@gmail.com
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: dill
+Requires-Dist: lightgbm
+Requires-Dist: xgboost
+Requires-Dist: Flask
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: ipykernel

@@ -1,0 +1,19 @@
+[ 2024-08-07 16:10:22,953 ] 15 root - INFO - giving path of train,test and raw data
+[ 2024-08-07 16:10:22,954 ] 29 root - INFO - we are initiating the data ingestion
+[ 2024-08-07 16:10:22,996 ] 31 root - INFO - data has been read correctly
+[ 2024-08-07 16:10:22,996 ] 37 root - INFO - making the raw file
+[ 2024-08-07 16:10:23,080 ] 40 root - INFO - converting the raw data into train and test
+[ 2024-08-07 16:10:23,087 ] 43 root - INFO - saving train and test data split
+[ 2024-08-07 16:10:23,170 ] 47 root - INFO - ingestion has been completed
+[ 2024-08-07 16:10:23,171 ] 66 root - INFO - Initiating the data transformation
+[ 2024-08-07 16:10:23,208 ] 71 root - INFO - Train and test CSVs have been read successfully
+[ 2024-08-07 16:10:23,208 ] 26 root - INFO - Making data transformation pickle file
+[ 2024-08-07 16:10:23,208 ] 29 root - INFO - Making numerical and categorical columns
+[ 2024-08-07 16:10:23,208 ] 47 root - INFO - Numerical and categorical pipelines have been made
+[ 2024-08-07 16:10:23,208 ] 56 root - INFO - Transformation has been completed
+[ 2024-08-07 16:10:23,209 ] 77 root - INFO - Train split has been completed
+[ 2024-08-07 16:10:23,210 ] 81 root - INFO - Test data has been split
+[ 2024-08-07 16:10:23,260 ] 85 root - INFO - Preprocessor has been applied to train and test independent features
+[ 2024-08-07 16:10:23,292 ] 90 root - INFO - Applied RandomOverSampler to the training data
+[ 2024-08-07 16:10:23,307 ] 95 root - INFO - Data transformation has been completed
+[ 2024-08-07 16:10:23,310 ] 98 root - INFO - Preprocessor pickle has been saved

@@ -1,0 +1,8 @@
+[ 2024-08-07 19:50:33,078 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-08-07 19:50:33,096 ] 97 werkzeug - INFO -  * Debugger PIN: 133-181-656
+[ 2024-08-07 19:50:53,589 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Aug/2024 19:50:53] "[33mGET /predict_datapoint HTTP/1.1[0m" 404 -
+[ 2024-08-07 19:50:53,696 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Aug/2024 19:50:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2024-08-07 19:51:07,741 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Aug/2024 19:51:07] "[33mGET /predict_datapoint HTTP/1.1[0m" 404 -
+[ 2024-08-07 19:51:18,921 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Aug/2024 19:51:18] "GET /predictdata HTTP/1.1" 200 -
+[ 2024-08-07 19:51:42,912 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Aug/2024 19:51:42] "POST /predictdata HTTP/1.1" 200 -
+[ 2024-08-07 19:53:46,323 ] 97 werkzeug - INFO -  * Detected change in '/home/googlyji/ml_projects/ml projects /adult census prediction /app.py', reloading

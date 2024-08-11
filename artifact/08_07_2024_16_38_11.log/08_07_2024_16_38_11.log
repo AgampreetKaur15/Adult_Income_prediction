@@ -1,0 +1,27 @@
+[ 2024-08-07 16:38:12,063 ] 16 root - INFO - giving path of train,test and raw data
+[ 2024-08-07 16:38:12,063 ] 30 root - INFO - we are initiating the data ingestion
+[ 2024-08-07 16:38:12,104 ] 32 root - INFO - data has been read correctly
+[ 2024-08-07 16:38:12,104 ] 38 root - INFO - making the raw file
+[ 2024-08-07 16:38:12,186 ] 41 root - INFO - converting the raw data into train and test
+[ 2024-08-07 16:38:12,191 ] 44 root - INFO - saving train and test data split
+[ 2024-08-07 16:38:12,270 ] 48 root - INFO - ingestion has been completed
+[ 2024-08-07 16:38:12,271 ] 66 root - INFO - Initiating the data transformation
+[ 2024-08-07 16:38:12,305 ] 71 root - INFO - Train and test CSVs have been read successfully
+[ 2024-08-07 16:38:12,305 ] 26 root - INFO - Making data transformation pickle file
+[ 2024-08-07 16:38:12,305 ] 29 root - INFO - Making numerical and categorical columns
+[ 2024-08-07 16:38:12,306 ] 47 root - INFO - Numerical and categorical pipelines have been made
+[ 2024-08-07 16:38:12,306 ] 56 root - INFO - Transformation has been completed
+[ 2024-08-07 16:38:12,307 ] 77 root - INFO - Train split has been completed
+[ 2024-08-07 16:38:12,307 ] 81 root - INFO - Test data has been split
+[ 2024-08-07 16:38:12,358 ] 85 root - INFO - Preprocessor has been applied to train and test independent features
+[ 2024-08-07 16:38:12,365 ] 90 root - INFO - Applied RandomOverSampler to the training data
+[ 2024-08-07 16:38:12,367 ] 95 root - INFO - Data transformation has been completed
+[ 2024-08-07 16:38:12,370 ] 98 root - INFO - Preprocessor pickle has been saved
+[ 2024-08-07 16:38:12,371 ] 33 root - INFO - Split training and test input data
+[ 2024-08-07 16:38:12,378 ] 37 root - INFO - predicting the model accuracy
+[ 2024-08-07 16:38:25,956 ] 58 root - INFO - checking the accuracy of every model
+[ 2024-08-07 16:38:26,581 ] 58 root - INFO - checking the accuracy of every model
+[ 2024-08-07 16:38:50,889 ] 58 root - INFO - checking the accuracy of every model
+[ 2024-08-07 16:38:51,574 ] 58 root - INFO - checking the accuracy of every model
+[ 2024-08-07 16:38:54,094 ] 58 root - INFO - checking the accuracy of every model
+[ 2024-08-07 16:39:20,648 ] 58 root - INFO - checking the accuracy of every model

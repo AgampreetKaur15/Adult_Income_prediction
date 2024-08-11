@@ -1,0 +1,102 @@
+[ 2024-08-07 16:51:37,632 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.20.10.2:8080
+[ 2024-08-07 16:51:37,632 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2024-08-07 16:52:08,074 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Aug/2024 16:52:08] "GET /predictdata HTTP/1.1" 200 -
+[ 2024-08-07 16:52:08,107 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Aug/2024 16:52:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2024-08-07 16:52:17,214 ] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "/home/googlyji/ml_projects/ml projects /adult census prediction /src/pipeline/predict_pipeline.py", line 17, in predict
+    data_scaled = preprocessor.transform(features)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/utils/_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 827, in transform
+    Xs = self._fit_transform(
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 681, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/utils/parallel.py", line 65, in __call__
+    return super().__call__(iterable_with_config)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/utils/parallel.py", line 127, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/pipeline.py", line 940, in _transform_one
+    res = transformer.transform(X)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/pipeline.py", line 696, in transform
+    Xt = transform.transform(Xt)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/utils/_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 1586, in transform
+    X_int, X_mask = self._transform(
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 200, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['7'] in column 0 during transform
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 40, in predict_datapoint
+    results = predict_pipeline.predict(pred_df)
+  File "/home/googlyji/ml_projects/ml projects /adult census prediction /src/pipeline/predict_pipeline.py", line 22, in predict
+    raise Custom_Exception(e, sys)
+src.exception.Custom_Exception: error found in script /home/googlyji/ml_projects/ml projects /adult census prediction /src/pipeline/predict_pipeline.py in line 17 and error is Found unknown categories ['7'] in column 0 during transform
+[ 2024-08-07 16:52:17,217 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Aug/2024 16:52:17] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2024-08-07 16:52:20,360 ] 838 app - ERROR - Exception on /predictdata [POST]
+Traceback (most recent call last):
+  File "/home/googlyji/ml_projects/ml projects /adult census prediction /src/pipeline/predict_pipeline.py", line 17, in predict
+    data_scaled = preprocessor.transform(features)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/utils/_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 827, in transform
+    Xs = self._fit_transform(
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/compose/_column_transformer.py", line 681, in _fit_transform
+    return Parallel(n_jobs=self.n_jobs)(
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/utils/parallel.py", line 65, in __call__
+    return super().__call__(iterable_with_config)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/joblib/parallel.py", line 1918, in __call__
+    return output if self.return_generator else list(output)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/joblib/parallel.py", line 1847, in _get_sequential_output
+    res = func(*args, **kwargs)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/utils/parallel.py", line 127, in __call__
+    return self.function(*args, **kwargs)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/pipeline.py", line 940, in _transform_one
+    res = transformer.transform(X)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/pipeline.py", line 696, in transform
+    Xt = transform.transform(Xt)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/utils/_set_output.py", line 157, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 1586, in transform
+    X_int, X_mask = self._transform(
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/sklearn/preprocessing/_encoders.py", line 200, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['7'] in column 0 during transform
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/googlyji/anaconda3/envs/income/lib/python3.8/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 40, in predict_datapoint
+    results = predict_pipeline.predict(pred_df)
+  File "/home/googlyji/ml_projects/ml projects /adult census prediction /src/pipeline/predict_pipeline.py", line 22, in predict
+    raise Custom_Exception(e, sys)
+src.exception.Custom_Exception: error found in script /home/googlyji/ml_projects/ml projects /adult census prediction /src/pipeline/predict_pipeline.py in line 17 and error is Found unknown categories ['7'] in column 0 during transform
+[ 2024-08-07 16:52:20,361 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Aug/2024 16:52:20] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2024-08-07 16:52:42,451 ] 97 werkzeug - INFO - 127.0.0.1 - - [07/Aug/2024 16:52:42] "GET /predictdata HTTP/1.1" 200 -

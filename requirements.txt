@@ -1,0 +1,12 @@
+pandas 
+seaborn 
+scikit-learn
+dill
+lightgbm
+xgboost
+Flask
+matplotlib
+numpy
+ipykernel 
+imbalanced-learn
+#-e .

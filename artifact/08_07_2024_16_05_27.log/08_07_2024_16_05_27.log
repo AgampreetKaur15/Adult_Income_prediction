@@ -1,0 +1,13 @@
+[ 2024-08-07 16:05:28,005 ] 15 root - INFO - giving path of train,test and raw data
+[ 2024-08-07 16:05:28,005 ] 29 root - INFO - we are initiating the data ingestion
+[ 2024-08-07 16:05:28,049 ] 31 root - INFO - data has been read correctly
+[ 2024-08-07 16:05:28,049 ] 37 root - INFO - making the raw file
+[ 2024-08-07 16:05:28,129 ] 40 root - INFO - converting the raw data into train and test
+[ 2024-08-07 16:05:28,134 ] 43 root - INFO - saving train and test data split
+[ 2024-08-07 16:05:28,214 ] 47 root - INFO - ingestion has been completed
+[ 2024-08-07 16:05:28,215 ] 68 root - INFO - intitating the data_transfromation
+[ 2024-08-07 16:05:28,252 ] 75 root - INFO - test and train csv have been read successfully
+[ 2024-08-07 16:05:28,252 ] 26 root - INFO - making data transformation pickle file
+[ 2024-08-07 16:05:28,252 ] 29 root - INFO - making numerical and categorical columns
+[ 2024-08-07 16:05:28,252 ] 49 root - INFO - numerical and categorical pipeline have been made
+[ 2024-08-07 16:05:28,252 ] 58 root - INFO - transformation has been completed
