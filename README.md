@@ -23,7 +23,7 @@
 STEPS:
 Clone the repository
 ```bash
-  https://github.com/Shomiya18/Thyroid_detection.git
+  https://github.com/AgampreetKaur15/Adult_Income_prediction.git
 ```
 STEP 01- Create a conda environment after opening the repository
 ```bash
